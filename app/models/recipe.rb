@@ -1,12 +1,12 @@
 class Recipe
-    include HTTParty
-        
-    base_uri 'http://www.recipepuppy.com/api'
-    default_params onlyImages: 1
+  include HTTParty
 
-    format :json
+  base_uri 'http://www.recipepuppy.com/api'
+  default_params onlyImages: 1
 
-    def self.for ( keyword = 'chocolate' )
-        get('', query: { q: keyword })['results']
-    end
+  format :json
+
+  def self.for(keyword = 'chocolate')
+    get('', query: { q: keyword })['results']
+  end
 end

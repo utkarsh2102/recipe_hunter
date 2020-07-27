@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.2.11'
-gem 'sqlite3', '1.3.13'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'rails', '~> 5.2'
+gem 'sqlite3', '~> 1.4.2'
+gem 'sass-rails', '~> 6.0'
+gem 'uglifier', '~> 4.2.0'
+gem 'coffee-rails', '~> 5.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'jbuilder', '~> 2.10'
+gem 'sdoc', '~> 1.1', group: :doc
 
 group :development, :test do
   gem 'byebug'
@@ -19,11 +19,11 @@ group :test do
   gem 'rspec', '~> 3.9.0'
   gem 'capybara'
   gem 'capybara-selenium'
-  gem 'webdrivers', '~> 3.7', '>= 3.7.2'  
+  gem 'webdrivers', '~> 4.4.1'
 end
 
 group :development do
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 3.7'
   gem 'spring'
 end
 
