@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '~> 5.2'
-gem 'sqlite3', '~> 1.4.2'
 gem 'sass-rails', '~> 6.0'
 gem 'uglifier', '~> 4.2.0'
 gem 'coffee-rails', '~> 5.0.0'
@@ -22,9 +21,15 @@ group :test do
   gem 'webdrivers', '~> 4.4.1'
 end
 
+group :production do
+  gem 'pg', '~> 0.20.0'
+  gem 'rails_12factor'
+end
+
 group :development do
   gem 'web-console', '~> 3.7'
   gem 'spring'
+  gem 'sqlite3', '~> 1.4.2'
 end
 
 gem 'httparty'
